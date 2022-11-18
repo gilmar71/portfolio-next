@@ -2,13 +2,32 @@ import styled from 'styled-components';
 
 export const Banner = styled.section`
   .bg {
-    /* background-image: url('/images/home-banner.jpg'); */
+    background-image: url('/images/bg-banner.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+  }
+
+  .container {
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h1 + * {
+      margin-top: 100px;
+    }
+
+    p + * {
+      margin-top: 200px;
+    }
+
+    * {
+      color: var(--white);
+    }
   }
 
   @media only screen and (max-width: 1600px) {

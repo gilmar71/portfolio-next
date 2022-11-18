@@ -24,7 +24,7 @@ export function NextImage({
   alt,
 }: NextImageProps) {
   return (
-    <S.Image>
+    <S.Image className="next-image">
       <Image
         alt={alt}
         src={

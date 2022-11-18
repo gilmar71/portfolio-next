@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 
 :root {
-   
+   --white: #fff;
+   --black: #000;
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-    background-color: var(--black);
+    background-color: #1F282D;
     overflow-x: hidden !important;
 }
 

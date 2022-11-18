@@ -1,16 +1,26 @@
 import Head from 'next/head';
 import '../styles/reset.css';
 import '../styles/fonts.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { GlobalStyle } from '../styles/global';
 import HomePage from 'pages';
+import { useEffect } from 'react';
+import { AppProps } from 'next/app';
 
-const App = () => {
+const App = ({ Component, pageProps }: AppProps) => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     <>
       <Head>
-        <title>Base</title>
-        <link rel="canonical" href="https://mikrokosmos.vercel.app/" />
+        <title>Resume Gilmar</title>
+        <link rel="canonical" href="https://" />
         <link rel="icon" href="/favicon.ico" />
 
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,7 +36,7 @@ const App = () => {
       </Head>
 
       <GlobalStyle />
-      <HomePage />
+      <Component {...pageProps} />
     </>
   );
 };
