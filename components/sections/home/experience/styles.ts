@@ -21,6 +21,10 @@ export const Experience = styled.section`
     flex-direction: column;
   }
 
+  h3 {
+    margin-top: 50px;
+  }
+
   @media only screen and (max-width: 1600px) {
   }
   @media only screen and (max-width: 1400px) {
