@@ -11,7 +11,7 @@ export function Banner() {
     <S.Banner>
       <div className="bg">
         <Container>
-          <h1 className="txt-sz-1">Resume</h1>
+          <h1 className="txt-sz-1">Resume teste</h1>
           <h2 className="txt-sz-2">Gilmar Bregano Filho</h2>
           <h3 className="txt-sz-3">Front end System Developer</h3>
           <p className="txt-sz-4">
